@@ -1,0 +1,26 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.quadrado;
+import java.util.Scanner;
+
+
+public class Quadrado {
+    int lado;
+
+    public int getLado(){
+    return lado;
+    }
+    public void setLado(int lado){
+    this.lado=lado;
+    }
+    public static void main(String[] args) {
+        Quadrado quadrado1 = new Quadrado();
+        Scanner scanner = new Scanner(System.in);
+         System.out.println("Digite o valor de um dos lados de quadrado");
+         quadrado1.setLado(scanner.nextInt());
+         quadrado1.lado = quadrado1.lado * quadrado1.lado ;
+        System.out.println("A area do quadrado é" + quadrado1.lado);
+    }
+}
