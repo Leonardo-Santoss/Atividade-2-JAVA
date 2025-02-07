@@ -1,0 +1,42 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.retangulo;
+import java.util.Scanner;
+
+public class Retangulo {
+    int base,altura, calculoArea, calculoPerimetro;
+
+    public int getBase(){
+    return base;
+    }
+    public void setBase(int base){
+    this.base=base;
+    }
+    
+    public int getAltura(){
+    return altura;
+    }
+    public void setAltura(int altura){
+    this.altura =altura;
+    }
+    public static void main(String[] args) {
+        
+        Retangulo retangulo1 = new Retangulo();
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Digite a base e a altura de um retangulo");
+        retangulo1.setBase(15);
+        retangulo1.setAltura(10);
+        
+        
+        
+        retangulo1.calculoArea = retangulo1.base * retangulo1.altura;
+        retangulo1.calculoPerimetro = (retangulo1.base + retangulo1.altura + retangulo1.base + retangulo1.altura);
+        
+        System.out.println("A area de retangulo " + retangulo1.calculoArea);
+        System.out.println("O perimetro de retangulo " + retangulo1.calculoPerimetro);
+    }
+}
+
